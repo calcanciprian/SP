@@ -1,10 +1,4 @@
 %Numar de ordine: 3 - Semnal Dreptunghiular
-%conform SF, orice semnal poate fi scris ca o suma infinita de sinusuri si cosinusuri de diferite frecvente
-%semnalul reconstruit are aproape aceeasi forma ca si semnalul original, avand cateva diferente
-%aceasta diferenta poate fi diminuata prin cresterea numarului de coeficienti din SF
-%spre final putem observa ca semnalul poate fi scris printr-o suma de SIN, deci semnalul va prezenta un caracter sinusoidal
-
-%atribuim perioadei valoarea data
 P = 40; %Perioada semnalului
 f = 1/P;
 %alegem rezolutia temporala adecvata si ulterior sa mai afisam o perioada la dreapta si alta la stanga
@@ -45,5 +39,10 @@ Ak(26) = abs(CC);
 Ak(1) = Ak(51);   
 %afisam spectrul de valori                 
 stem([0:N],Ak), title('Spectrul semnalului dreptunghiular'); 
+%conform SF, orice semnal poate fi scris ca o suma infinita de sinusuri si cosinusuri de diferite frecvente
+%semnalul reconstruit are aproape aceeasi forma ca si semnalul original, avand cateva diferente
+%aceasta diferenta poate fi diminuata prin cresterea numarului de coeficienti din SF
+%spre final putem observa ca semnalul poate fi scris printr-o suma de SIN, deci semnalul va prezenta un caracter sinusoidal
+%atribuim perioadei valoarea data
 
 
